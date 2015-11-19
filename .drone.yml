@@ -2,8 +2,8 @@ build:
   image: ruby:2.1.5
   environment:
     - blah=foobar
-    - BUILDSTAMP="${CI_COMMIT}-${CI_BUILD_NUMBER}"
   commands:
+    - export BUILDSTAMP="${CI_COMMIT}-${CI_BUILD_NUMBER}"
     - env | sort
     - bundle install
     - bundle exec rake middleman-build
