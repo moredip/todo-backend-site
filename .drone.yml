@@ -5,3 +5,5 @@ build:
   commands:
     - echo 'hello drone!'
     - env
+    - bundle install
+    - rake build
