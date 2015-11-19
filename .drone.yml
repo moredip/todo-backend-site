@@ -6,4 +6,4 @@ build:
   commands:
     - env | sort
     - bundle install
-    - bundle exec rake build
+    - bundle exec rake middleman-build
