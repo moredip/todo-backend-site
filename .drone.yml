@@ -2,8 +2,8 @@ build:
   image: ruby:2.1.5
   environment:
     - blah=foobar
+    - BUILDSTAMP="${CI_COMMIT}-${CI_BUILD_NUMBER}"
   commands:
-    - echo 'hello drone!'
-    - env
+    - env | sort
     - bundle install
-    - rake build
+    - bundle exec rake build
