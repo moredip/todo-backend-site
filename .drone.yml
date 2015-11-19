@@ -6,4 +6,4 @@ build:
     - export BUILDSTAMP="${CI_COMMIT}-${CI_BUILD_NUMBER}"
     - env | sort
     - bundle install
-    - bundle exec rake middleman-build
+    - bundle exec middleman build
