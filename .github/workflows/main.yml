@@ -10,4 +10,4 @@ jobs:
     
     - name: build
       uses: ./
-      args: build
+      #args: build
