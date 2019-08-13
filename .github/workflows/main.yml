@@ -9,5 +9,5 @@ jobs:
     - uses: actions/checkout@master
     
     - name: build
-      uses: ./
-      #args: build
+      uses: docker://moredip/todo-backend-site:master
+      args: build
